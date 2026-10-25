@@ -15,25 +15,31 @@
 <body>
 
 <h1>Privacy Policy for EasyExplorer</h1>
-<p class="updated">Last updated: September 4, 2026</p>
+<p class="updated">Last updated: October 25, 2026</p>
 
-<p>EasyExplorer ("the app") is a file manager for Android, developed by Deepak Ranjan Biswas. This policy explains what the app does and does not do with your data.</p>
+<p>EasyExplorer ("the app") is a file manager for Android, developed by <a href="http://drb21904.github.io/privacy-first">Privacy First Technologies</a>. This policy explains what the app does and does not do with your data.</p>
 
 <h2>Summary</h2>
-<p>EasyExplorer does not collect, store, or transmit any personal data. It has no analytics, no personalised advertising, no user accounts, and no network access of any kind. Every feature works entirely on your device.</p>
+<p>EasyExplorer itself does not collect, store, or transmit your files or any personal data, and it has no analytics and no user accounts. Every file feature works entirely on your device. To keep the app free, it shows a limited number of small, non-personalised banner ads (never video) served by Google AdMob; the only data that leaves your device is what Google's ad service receives in order to show those ads (see "Advertising" below).</p>
 
 <h2>What the app accesses</h2>
 <p>EasyExplorer requests broad storage access ("All files access") because browsing, searching, and managing files across your device's entire storage — internal memory and any SD card or USB drive — is the app's core purpose. This access is used only to:</p>
 <ul>
   <li>List, open, and preview files and folders you browse to</li>
-  <li>Perform actions you explicitly request: copy, cut, paste, move, rename, delete, create, and search</li>
+  <li>Perform actions you explicitly request: copy, cut, paste, move, rename, delete, restore, create, compress, extract, and search &mdash; including, when you ask for it, searching for text inside your documents and pictures. That text is read on your device only and is never stored or sent anywhere.</li>
   <li>Share a file with another app when you choose to, via Android's standard share sheet</li>
 </ul>
-<p>No file content, filename, folder structure, or usage data is ever read by anyone other than you, through the app's own on-screen interface. The app has no server, and none of this information leaves your device.</p>
+<p>Tools such as the Recycle bin, Recent files, Storage overview, Duplicate finder and checksums also work only on your device. Deleted items are moved to a hidden folder (".EasyExplorerTrash") on the same storage and are removed for good after 30 days, or earlier if you empty the bin.</p>
+<p>The optional <strong>Vault</strong> keeps files you put in it encrypted (AES-256) inside the app's private storage on your device. File names are encrypted too. The encryption key is protected by your PIN or password (and, if you turn it on, by your fingerprint through Android's secure hardware). Your PIN, password, recovery code and fingerprint are never stored in readable form and never leave your device, and the developer cannot recover them. Vault contents are excluded from Android's automatic cloud backup and device-to-device transfer. A Vault backup is created only when you ask for one, as a single encrypted file saved to a location you choose (for example a USB drive or a cloud folder); it can only be opened with the backup password you set. The Vault is deleted when you uninstall the app or clear its storage.</p>
+<p>No file content, filename, folder structure, or usage data is ever read by anyone other than you, through the app's own on-screen interface. The app has no server of its own, and none of this information is shared with the ad service or anyone else.</p>
 
 <h2>Data collection</h2>
-<p>EasyExplorer collects no personal information, does not use analytics or crash-reporting services, and contains no advertising or tracking SDKs of any kind.</p>
-<p>The app stores a small number of preferences locally on your device only (such as your preferred view mode, sort order, and whether you've dismissed certain in-app notices). This information never leaves your device and is deleted automatically if you uninstall the app.</p>
+<p>EasyExplorer collects no personal information and does not use analytics or crash-reporting services. The only third-party SDK that sends data is the Google Mobile Ads SDK, described below.</p>
+<p>The app stores a small number of preferences locally on your device only (such as your chosen language, preferred view mode, sort order, whether hidden items are shown, and whether you've dismissed certain in-app notices). This information never leaves your device and is deleted automatically if you uninstall the app.</p>
+
+<h2>Advertising</h2>
+<p>EasyExplorer shows small banner ads provided by Google AdMob. To serve and measure ads and to prevent fraud, the Google Mobile Ads SDK automatically collects and sends to Google: your device's IP address (which may be used to estimate its general location), device and account identifiers such as the Android advertising ID and app set ID, interactions with the ads, and diagnostic information about ad performance. This data is encrypted in transit and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>; see also <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+<p>The app only requests <strong>non-personalised ads</strong>: ads are not selected on the basis of your interests, your activity or a profile built about you. Google may still use the data above for limited purposes such as frequency capping, aggregated ad reporting and fraud prevention. Where the law requires it (for example in the EEA, the UK and Switzerland), the app asks for your consent first, and you can change that choice later. You can reset or delete your advertising ID at any time in your device's settings (Settings &rsaquo; Privacy &rsaquo; Ads, or Settings &rsaquo; Google &rsaquo; Ads, depending on your device). No file names, file contents or folder information are ever given to the ad service.</p>
 
 <h2>Sharing files with other apps</h2>
 <p>When you choose to share or open a file, EasyExplorer hands that specific file to the app you select (e.g. Gmail, Google Drive, a messaging app) via Android's standard sharing mechanism. EasyExplorer does not see or control what that other app subsequently does with the file — that's governed by the other app's own privacy policy.</p>
@@ -43,10 +49,12 @@
 <ul>
   <li><strong>All files access (MANAGE_EXTERNAL_STORAGE)</strong> — to browse and manage files across your device's storage, the app's core function.</li>
   <li><strong>Storage (READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE)</strong> — the equivalent, classic permission used automatically on older Android versions.</li>
+  <li><strong>Biometrics (USE_BIOMETRIC / USE_FINGERPRINT)</strong> — only if you choose to unlock the Vault with your fingerprint. The app never sees or stores your fingerprint; Android only tells it whether the check succeeded.</li>
+  <li><strong>Internet, network state and advertising ID (INTERNET, ACCESS_NETWORK_STATE, AD_ID)</strong> — added by the Google Mobile Ads SDK, used only to load and show ads. The app never uses the network for your files.</li>
 </ul>
 
 <h2>Children's privacy</h2>
-<p>EasyExplorer is a general-purpose utility not directed at children and does not knowingly collect information from anyone, including children, since it does not collect information at all.</p>
+<p>EasyExplorer is a general-purpose utility not directed at children and does not knowingly collect information from children. The app itself collects no personal information; ads are served by Google AdMob as described above.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this same URL with a revised "last updated" date.</p>
